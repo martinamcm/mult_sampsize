@@ -4,6 +4,8 @@ Development version of package for determining sample size required in studies u
 
 Allows for composite, co-primary and multiple primary endpoints. Implementation as a Shiny app with further documentation available at martinamcm/MultSampSize. 
 
+Install using devtools::install_github("martinamcm/mult_sampsize")
+
 #### References
 
 McMenamin M, Barrett JK, Berglind A, Wason JMS. Sample Size Estimation using a Latent Variable Model for Mixed Outcome Co-Primary, Multiple Primary and Composite Endpoints. 2019. arXiv:1912.05258. 
