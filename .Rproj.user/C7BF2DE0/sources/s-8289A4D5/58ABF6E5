@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1620977565697.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1852980842",
+    "id" : "58ABF6E5",
+    "lastKnownWriteTime" : 1620978427,
+    "last_content_update" : 1620978427512,
+    "path" : "~/Documents/GitHub/mult_sampsize/R/sampsizecomp.R",
+    "project_path" : "R/sampsizecomp.R",
+    "properties" : {
+        "cursorPosition" : "0,44",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

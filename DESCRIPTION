@@ -1,0 +1,19 @@
+Package: multsampsize
+Type: Package
+Title: Sample Size Estimation for Mixed Outcome Composite, Co-primary and Multiple Primary Endpoints
+Version: 0.1.0
+Authors@R: c(person(given   = "Martina", 
+                    family = "McMenamin",
+                    email   = "mmcm@hku.hk",
+                    role    = c("aut","cre")))
+Description: Estimates the required sample size using a latent variable model to analyse mixed continuous and discrete outcomes combined to form composite, co-primary or multiple primary endpoints
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+         stats,
+	mvtnorm,
+	MASS
+Date: 2021-05-14
+URL: https://github.com/martinamcm/mult_sampsize
+RoxygenNote: 7.1.1
