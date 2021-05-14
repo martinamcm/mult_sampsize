@@ -1,6 +1,8 @@
 # mult_sampsize
 
-Development version of package for determining sample size required in studies using multivariate mixed continuous and discrete outcomes when analysed using a latent variable model. Allows for composite, co-primary and multiple primary endpoints. Implementation as a Shiny app with further documentation available at martinamcm/MultSampSize. 
+Development version of package for determining sample size required in studies using multivariate mixed continuous and discrete outcomes when analysed using a latent variable model. 
+
+Allows for composite, co-primary and multiple primary endpoints. Implementation as a Shiny app with further documentation available at martinamcm/MultSampSize. 
 
 #### References
 
