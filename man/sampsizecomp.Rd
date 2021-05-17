@@ -20,7 +20,12 @@ sampsizecomp(augmean, binmean, augvar, binvar, alpha, beta)
 \item{beta}{beta level (1-desired power)}
 }
 \description{
-Available as a Shiny app with documentation at https://github.com/martinamcm/MultSampSize
+Determines sample size required in studies using multivariate mixed continuous and discrete endpoints,
+when analysed using a latent variable model. The package facilitates sample size estimation for mixed 
+outcomes that are combined to form either composite, co-primary and multiple primary endpoints.
+}
+\details{
+Available as a Shiny app with documentation at [MultSampSize](https://github.com/martinamcm/MultSampSize)
 }
 \references{
 McMenamin M, Barrett JK, Berglind A, Wason JMS. Sample Size Estimation using a 
