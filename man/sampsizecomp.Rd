@@ -4,14 +4,14 @@
 \alias{sampsizecomp}
 \title{Sample Size Estimation for Mixed Outcomes}
 \usage{
-sampsizecomp(augmean, augvar, binmean, binvar, alpha, beta)
+sampsizecomp(augmean, binmean, augvar, binvar, alpha, beta)
 }
 \arguments{
 \item{augmean}{mean risk difference treatment effect estimated using augmented binary method}
 
-\item{augvar}{variance of risk difference treatment effect estimated using augmented binary method}
-
 \item{binmean}{mean risk difference treatment effect estimated using standard binary method}
+
+\item{augvar}{variance of risk difference treatment effect estimated using augmented binary method}
 
 \item{binvar}{variance of risk difference treatment effect estimated using standard binary method}
 
@@ -30,6 +30,9 @@ Latent Variable Model for Mixed Outcome Co-Primary, Multiple Primary and Composi
 McMenamin M, Grayling MJ, Berglind A, Wason JMS. Increasing power in the 
 analysis of responder endpoints in rheumatology: a software tutorial.
 medRxiv. 2020. doi: 10.1101/2020.07.28.20163378
+}
+\seealso{
+augbin_rheum for obtaining estimates of @augmean, @augvar, @binmean, @binvar from existing data
 }
 \author{
 Martina McMenamin.

@@ -18,17 +18,22 @@
 #' @param binvar variance of risk difference treatment effect estimated using standard binary method
 #' @param alpha one-sided alpha level 
 #' @param beta beta level: 1-desired power 
+#' @seealso augbin_rheum for obtaining estimates of @augmean, @augvar, @binmean, @binvar from existing data
 #' @author Martina McMenamin.
 #' @importFrom stats pnorm qnorm
 #' @importFrom mvtnorm pmvnorm 
 #' @export
 
   
-sampsizecomp <- function(augmean,augvar,binmean,binvar,alpha,beta){
+sampsizecomp <- function(augmean,binmean,augvar,binvar,alpha,beta){
   
-  samp = samplesize(augmean,augvar,binmean,binvar,alpha,beta)
+  samp = samplesize(augmean,binmean,augvar,binvar,alpha,beta)
   
-  samp
+  est_samp <- ceiling(samp)
+  Method <- c("Latent Variable", "Standard Binary")
+  
+  tibble::tibble(Method = Method,
+                 samp_size_per_arm = est_samp)
 }
   
 
