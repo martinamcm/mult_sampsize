@@ -18,7 +18,7 @@
 #' @param binvar variance of treatment effect estimated using standard binary method
 #' @param alpha one-sided alpha level 
 #' @param beta beta level (1-desired power)
-#' @seealso \code{\link{augbin_rheum}} for obtaining estimates of argument 'augmean', 'augvar', 'binmean', 'binvar' from existing data
+#' @seealso \code{\link{augbinrheum}} for obtaining estimates of argument 'augmean', 'augvar', 'binmean', 'binvar' from existing data
 #' @author Martina McMenamin.
 #' @importFrom stats pnorm qnorm
 #' @importFrom mvtnorm pmvnorm 
