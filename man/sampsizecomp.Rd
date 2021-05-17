@@ -32,7 +32,7 @@ analysis of responder endpoints in rheumatology: a software tutorial.
 medRxiv. 2020. doi: 10.1101/2020.07.28.20163378
 }
 \seealso{
-\code{\link{augbin_rheum}} for obtaining estimates of argument 'augmean', 'augvar', 'binmean', 'binvar' from existing data
+\code{\link{augbinrheum}} for obtaining estimates of argument 'augmean', 'augvar', 'binmean', 'binvar' from existing data
 }
 \author{
 Martina McMenamin.
