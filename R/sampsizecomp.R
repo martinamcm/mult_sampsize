@@ -4,7 +4,7 @@
 #' when analysed using a latent variable model. The package facilitates sample size estimation for mixed 
 #' outcomes that are combined to form either composite, co-primary and multiple primary endpoints.
 #' 
-#' Available as a Shiny app with documentation at <https://github.com/martinamcm/MultSampSize>
+#' Available as a Shiny app with documentation at \href{https://github.com/martinamcm/MultSampSize}{MultSampSize}
 #' 
 #' @references 
 #' 
