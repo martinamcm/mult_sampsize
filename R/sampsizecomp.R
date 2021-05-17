@@ -12,13 +12,13 @@
 #' analysis of responder endpoints in rheumatology: a software tutorial.
 #' medRxiv. 2020. doi: 10.1101/2020.07.28.20163378
 #'
-#' @param augmean mean risk difference treatment effect estimated using augmented binary method
-#' @param augvar variance of risk difference treatment effect estimated using augmented binary method
-#' @param binmean mean risk difference treatment effect estimated using standard binary method
-#' @param binvar variance of risk difference treatment effect estimated using standard binary method
+#' @param augmean average treatment effect estimated using augmented binary method
+#' @param augvar variance of treatment effect estimated using augmented binary method
+#' @param binmean average treatment effect estimated using standard binary method
+#' @param binvar variance of treatment effect estimated using standard binary method
 #' @param alpha one-sided alpha level 
-#' @param beta beta level: 1-desired power 
-#' @seealso augbin_rheum for obtaining estimates of @augmean, @augvar, @binmean, @binvar from existing data
+#' @param beta beta level (1-desired power)
+#' @seealso \code{\link{augbin_rheum}} for obtaining estimates of argument 'augmean', 'augvar', 'binmean', 'binvar' from existing data
 #' @author Martina McMenamin.
 #' @importFrom stats pnorm qnorm
 #' @importFrom mvtnorm pmvnorm 
