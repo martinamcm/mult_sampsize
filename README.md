@@ -6,10 +6,8 @@
 ## Description
 
 R package for determining sample size required in studies using
-multivariate mixed continuous and discrete endpoints, when analysed
-using a latent variable model. The package facilitates sample size
-estimation for mixed outcomes that are combined to form either
-composite, co-primary and multiple primary endpoints.
+composite endpoints with mixed continuous and discrete components
+analysed using the augmented binary method.
 
 ## Getting started
 
@@ -27,7 +25,7 @@ functionality and examples available at
 Function `sampsizecomp()` provides the required sample size using both
 the augmented binary method based on a latent variable model and a
 standard binary method based on a logistic regression model with the
-following inputs:
+following arguments:
 
   - `augmean` mean risk difference treatment effect estimated using
     augmented binary method
