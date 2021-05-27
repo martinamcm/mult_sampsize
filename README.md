@@ -60,8 +60,8 @@ data_fit <- augbinrheum(Egdata21,2,1,c(18,6))
 augmean_est <- data_fit$risk_diff$est[1]
 binmean_est <- data_fit$risk_diff$est[2]
 
-augvar_est <- ((data_fit$risk_diff$ci_upper[1]-augmean_est)/1.96)^2
-binvar_est <- ((data_fit$risk_diff$ci_upper[2]-binmean_est)/1.96)^2
+augvar_est <- 0.5*dim(Egdata21)[1]*((data_fit$risk_diff$ci_upper[1]-augmean_est)/1.96)^2
+binvar_est <- 0.5*dim(Egdata21)[1]*((data_fit$risk_diff$ci_upper[2]-binmean_est)/1.96)^2
 
 sampsizecomp(augmean_est,binmean_est,augvar_est,binvar_est,0.05,0.2)
 ```
