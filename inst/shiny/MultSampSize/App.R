@@ -347,13 +347,14 @@ server <- function(input, output) {
   output$Analysis <- renderFormattable({
     
     Parameters <- c(HTML("&mu; <sub>T</sub>"),HTML("&mu;<sub>C</sub>"),HTML("&delta;"),HTML("&sigma;"))
-    LatVar <- c(GenAnalysis()[c(3:4,1:2)])
-    Bin <- c(GenAnalysis()[c(7:8,5:6)])
+    LatVar <- c(GenAnalysis()[c(3:4,1)],0.5*dim(DataInf())[1]*GenAnalysis()[2])
+    Bin <- c(GenAnalysis()[c(7:8,5)],0.5*dim(DataInf())[1]*GenAnalysis()[6])
     
     dataresultstable <- data.frame(Parameters,LatVar,Bin)
     formattable(dataresultstable,col.names=(c("Parameters","Estimates","Binary")),digits=3)
     
   })
+  
   
   output$LatEstTable <- renderUI({
     formattableOutput("parameterest")
@@ -369,9 +370,10 @@ server <- function(input, output) {
   })
   
   
+    
   powercalc <- reactive({
      mean <- GenAnalysis()[1]
-     var <- sqrt(GenAnalysis()[2])
+     var <- (0.5*dim(DataInf())[1]*GenAnalysis()[2])
      maxn <- input$maxn
      alpha <- switch(input$alpha,
                      "Alpha = 0.01" = 0.01, 
@@ -386,7 +388,7 @@ server <- function(input, output) {
   
   powercalcbin <- reactive({
     mean <- GenAnalysis()[1]
-    var <- sqrt(GenAnalysis()[6])
+    var <- (0.5*dim(DataInf())[1]*GenAnalysis()[6])
     maxn <- input$maxn
     alpha <- switch(input$alpha,
                     "Alpha = 0.01" = 0.01, 
@@ -398,7 +400,6 @@ server <- function(input, output) {
     return(betas)
     
   })
-  
 
   coprimpower <- reactive({
     
